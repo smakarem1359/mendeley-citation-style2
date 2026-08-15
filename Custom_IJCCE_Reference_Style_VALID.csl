@@ -1,35 +1,30 @@
 <?xml version="1.0" encoding="utf-8"?>
 <style xmlns="http://purl.org/net/xbiblio/csl" version="1.0" class="in-text" default-locale="en-US">
   <info>
-    <title>Custom IJCCE Reference Style</title>
-    <title-short>Custom IJCCE</title-short>
-    <id>https://www.mendeley.com/styles/custom-ijcce-reference-style-2026</id>
-    <link href="https://www.mendeley.com/styles/custom-ijcce-reference-style-2026" rel="self"/>
-    <updated>2026-08-15T19:30:00+00:00</updated>
+    <title>Custom IJCCE Reference Style FINAL</title>
+    <title-short>Custom IJCCE FINAL</title-short>
+    <id>https://www.mendeley.com/styles/custom-ijcce-final-2026</id>
+    <link href="https://www.mendeley.com/styles/custom-ijcce-final-2026" rel="self"/>
+    <updated>2026-08-15T20:00:00+00:00</updated>
   </info>
-
   <macro name="author">
     <names variable="author">
-      <name initialize-with="." delimiter=", " delimiter-precedes-last="always"/>
+      <name name-as-sort-order="all" sort-separator=" " initialize-with="." delimiter=", " delimiter-precedes-last="always"/>
     </names>
   </macro>
-
   <macro name="year">
     <date variable="issued" prefix="(" suffix=")">
       <date-part name="year"/>
     </date>
   </macro>
-
   <citation>
     <layout prefix="[" suffix="]">
       <text variable="citation-number"/>
     </layout>
   </citation>
-
   <bibliography entry-spacing="0" line-spacing="1">
     <layout suffix=".">
-      <text variable="citation-number" suffix="] "/>
-
+      <text variable="citation-number" prefix="[" suffix="] "/>
       <choose>
         <if type="article-journal">
           <text macro="author" suffix=", "/>
@@ -42,7 +37,6 @@
           </group>
           <text macro="year" prefix=" "/>
         </if>
-
         <else-if type="book">
           <text macro="author" suffix=", "/>
           <text variable="title" suffix=", "/>
@@ -52,7 +46,6 @@
           </group>
           <text macro="year" prefix=" "/>
         </else-if>
-
         <else-if type="chapter">
           <text macro="author" suffix=", "/>
           <text variable="title" suffix=", "/>
@@ -61,14 +54,12 @@
           <text variable="publisher-place" suffix=" "/>
           <text macro="year"/>
         </else-if>
-
         <else-if type="paper-conference">
           <text macro="author" suffix=", "/>
           <text variable="title" suffix=", "/>
           <text variable="container-title" suffix=", "/>
           <text macro="year"/>
         </else-if>
-
         <else-if type="thesis">
           <text macro="author" suffix=", "/>
           <text variable="title" suffix=", "/>
@@ -77,7 +68,6 @@
           <text variable="publisher-place" suffix=" "/>
           <text macro="year"/>
         </else-if>
-
         <else>
           <text macro="author" suffix=", "/>
           <text variable="title" suffix=", "/>
