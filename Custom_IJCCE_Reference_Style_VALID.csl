@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0" class="numeric" default-locale="en-US">
+<style xmlns="http://purl.org/net/xbiblio/csl" version="1.0" class="in-text" default-locale="en-US">
   <info>
     <title>Custom IJCCE Reference Style</title>
     <title-short>Custom IJCCE</title-short>
-    <id>http://www.mendeley.com/styles/custom-ijcce-reference-style</id>
-    <link href="http://www.mendeley.com/styles/custom-ijcce-reference-style" rel="self"/>
-    <updated>2026-08-15T00:00:00+00:00</updated>
+    <id>https://www.mendeley.com/styles/custom-ijcce-reference-style-2026</id>
+    <link href="https://www.mendeley.com/styles/custom-ijcce-reference-style-2026" rel="self"/>
+    <updated>2026-08-15T19:30:00+00:00</updated>
   </info>
 
   <macro name="author">
